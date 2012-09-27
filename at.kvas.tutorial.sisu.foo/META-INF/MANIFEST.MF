@@ -4,6 +4,9 @@ Bundle-Name: Foo
 Bundle-SymbolicName: at.kvas.tutorial.sisu.foo; singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: at.kvas.tutorial.sisu.foo.Activator
-Require-Bundle: org.eclipse.core.runtime
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.sisu.inject;bundle-version="0.0.0",
+ at.kvas.tutorial.sisu.bar;bundle-version="1.0.0",
+ javax.inject;bundle-version="1.0.0"
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
