@@ -1,34 +1,27 @@
 package at.kvas.tutorial.sisu.foo;
 
-import javax.inject.Inject;
-
 import org.eclipse.equinox.app.IApplication;
 import org.eclipse.equinox.app.IApplicationContext;
+import org.eclipse.sisu.containers.SisuGuice;
 
 import at.kvas.tutorial.sisu.bar.BarService;
+
+import com.google.inject.Key;
 
 /**
  * This class controls all aspects of the application's execution
  */
-public class Application implements IApplication {
-
-	@Inject BarService bar;
+public class Application implements IApplication {	
 	
-	/* (non-Javadoc)
-	 * @see org.eclipse.equinox.app.IApplication#start(org.eclipse.equinox.app.IApplicationContext)
-	 */
 	public Object start(IApplicationContext context) throws Exception {
 		System.out.println("Sisu");
-		
+		BarService bar = SisuGuice.lookup(Key.get(BarService.class));
 		
 		bar.bar();
 		
 		return IApplication.EXIT_OK;
 	}
 
-	/* (non-Javadoc)
-	 * @see org.eclipse.equinox.app.IApplication#stop()
-	 */
 	public void stop() {
 		// nothing to do
 	}
