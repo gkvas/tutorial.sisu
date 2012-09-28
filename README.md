@@ -1,7 +1,7 @@
 tutorial.sisu
 =============
 
-I quick working example for Sisu in an RCP environment.
+A quick working example for Sisu in an RCP environment.
 
 at.kvas.tutorial.sisu.foo.Application is the entry point.
 
