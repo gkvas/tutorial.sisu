@@ -4,8 +4,7 @@ Bundle-Name: Bar
 Bundle-SymbolicName: at.kvas.tutorial.sisu.bar
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: at.kvas.tutorial.sisu.bar.Activator
-Require-Bundle: org.eclipse.core.runtime,
- org.eclipse.sisu.inject;bundle-version="0.0.0"
+Require-Bundle: org.eclipse.core.runtime
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Export-Package: at.kvas.tutorial.sisu.bar
