@@ -1,21 +1,25 @@
 package at.kvas.tutorial.sisu.foo;
 
+import javax.inject.Inject;
+
 import org.eclipse.equinox.app.IApplication;
 import org.eclipse.equinox.app.IApplicationContext;
 import org.eclipse.sisu.Sisu;
 
-import at.kvas.tutorial.sisu.bar.BarService;
+import at.kvas.tutorial.sisu.baz.BazService;
 
 /**
  * This class controls all aspects of the application's execution
  */
 public class Application implements IApplication {	
 	
+	@Inject BazService baz;
+	
 	public Object start(IApplicationContext context) throws Exception {
 		System.out.println("Foo");
-		BarService bar = Sisu.lookup(BarService.class);
+		BazService baz = Sisu.lookup(BazService.class);
 		
-		bar.bar();
+		baz.baz();		
 		
 		return IApplication.EXIT_OK;
 	}
