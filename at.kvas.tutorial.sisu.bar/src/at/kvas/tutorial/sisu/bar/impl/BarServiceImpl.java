@@ -9,7 +9,7 @@ public class BarServiceImpl implements BarService {
 
 	@Override
 	public void bar() {
-		
+		System.out.println("bar!");
 	}
 
 }
