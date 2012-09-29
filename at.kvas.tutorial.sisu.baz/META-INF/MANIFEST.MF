@@ -8,6 +8,5 @@ Require-Bundle: org.eclipse.core.runtime,
  at.kvas.tutorial.sisu.bar;bundle-version="1.0.0"
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Import-Package: javax.enterprise.inject,
- javax.inject
+Import-Package: javax.inject
 Export-Package: at.kvas.tutorial.sisu.baz
