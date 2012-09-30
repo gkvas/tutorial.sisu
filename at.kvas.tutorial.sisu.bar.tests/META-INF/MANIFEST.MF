@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Tests
+Bundle-SymbolicName: at.kvas.tutorial.sisu.bar.tests
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: at.kvas.tutorial.sisu.bar.tests.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ org.junit,
+ at.kvas.tutorial.sisu.bar,
+ org.eclipse.sisu.inject
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

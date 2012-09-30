@@ -7,5 +7,6 @@ Bundle-Activator: at.kvas.tutorial.sisu.bar.Activator
 Require-Bundle: org.eclipse.core.runtime
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Export-Package: at.kvas.tutorial.sisu.bar
+Export-Package: at.kvas.tutorial.sisu.bar,
+ at.kvas.tutorial.sisu.bar.impl;x-friends:="at.kvas.tutorial.sisu.bar.tests"
 Import-Package: javax.inject;version="1.0.0"
