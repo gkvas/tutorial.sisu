@@ -38,16 +38,12 @@ to your target platform.
 
     git clone git://git.eclipse.org/gitroot/sisu/org.eclipse.sisu.inject.git
 
-
-
-   cd org.eclipse.sisu.inject
-   mvn clean install
-
-
+    cd org.eclipse.sisu.inject
+    mvn clean install
 
 The bundle resides in 
 
-   org.eclipse.sisu.inject/org.eclipse.sisu.inject/target
+    org.eclipse.sisu.inject/org.eclipse.sisu.inject/target
 
 TODO
 ====
